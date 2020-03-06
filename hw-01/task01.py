@@ -9,6 +9,8 @@
 Вывод:
 17 70 10000000 
 """
+x = int(input())
+y = int(input())
 
 def easy_calc(x, y):
     sum = x + y
@@ -16,4 +18,4 @@ def easy_calc(x, y):
     power = x ** y
     print(' ', sum, ' ', mult, ' ', power)
 
-easy_calc(3,5)
+easy_calc(x,y)

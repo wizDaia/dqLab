@@ -16,6 +16,9 @@
 четырнадцать
 """
 
+x = input()
+y = input()
+
 def sum_num(x,y):
     number = {'ноль':0,
             'один':1,
@@ -40,4 +43,4 @@ def sum_num(x,y):
     else:
         print(twenty[sum - 10])
 
-sum_num('шесть', 'девять')
+sum_num(x, y)

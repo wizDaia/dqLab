@@ -35,23 +35,18 @@ sounds = {'курочку!':'Курочка по зёрнышку кудах-т�
           'поросёнка!':'Поросёнок хрюки-хрюки,',
           'телевизор!':'Телевизор надо, надо, ведь у нас такое стадо!'}
 
-character = ['курочку!', 'уточку!', 'индюшонка!', 'кисоньку!', 'собачонку!',
-             'коровёнку!', 'поросёнка!', 'телевизор!']
-
 main = 'Бабушка, бабушка, купим'
 
 new = ['']
 
 def song():
-  for character in sounds:
-    print(main, character)
-    print(main, character)
-    print(sounds.get(character))
-    if sounds.get(character) == 'Телевизор надо, надо, ведь у нас такое стадо!':
-      break
-    for x in new:
-      print(x)
-    if sounds.get(character) != 'Телевизор надо, надо, ведь у нас такое стадо!':
-      new.insert(0, sounds.get(character))
+  for keys in sounds:
+    print(main, keys)
+    print(main, keys)
+    print(sounds.get(keys))
+    if len(new) != len(sounds):
+      for x in new:
+        print(x)
+    new.insert(0, sounds.get(keys))
 
 song()

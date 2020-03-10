@@ -28,9 +28,9 @@ class Move(object):
       if self.direc == 'South':
         self.delta_y = self.y + 5
       if self.direc == 'West':
-        self.delta_x = self.x + 1
+        self.delta_x = self.x - 1
       if self.direc == 'East':
-        self.delta_y =  self.y - 1
+        self.delta_x =  self.x + 1
       print(n,'second, direction -',self.direc)
 
   def way(self): #расстояние

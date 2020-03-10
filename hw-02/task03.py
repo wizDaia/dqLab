@@ -45,8 +45,8 @@ class Skier(Move):
     self.name = name
     super().__init__(x, y, time)
 
-f = Skier('Ann', 0, 0, 17)
-
-f.fun1()
-f.fun2()
-f.way()
+if __name__ == '__main__':
+  f = Skier('Ann', 0, 0, 17)
+  f.fun1()
+  print('Last point', f.fun2())
+  print('Skier goes', f.way(), 'm from start point')
